@@ -1,0 +1,9 @@
+.DS_Store
+temp.png
+temp_icon.png
+temp_favicon.jpg
+*.mp4
+*.webp
+node_modules/
+.env
+.vercel/
