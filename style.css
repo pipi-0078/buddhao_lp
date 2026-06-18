@@ -338,3 +338,86 @@ body {
   transform: translateX(100%);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* ===== New Styles for Concept Renewal ===== */
+
+/* Intro Box */
+.intro-box {
+  background: rgba(45, 212, 168, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(45, 212, 168, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(45, 212, 168, 0.05);
+}
+
+/* TOC Box */
+.toc-box {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+}
+.toc-box a {
+  position: relative;
+  transition: all 0.3s;
+}
+.toc-box a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #2dd4a8;
+  transition: width 0.3s;
+}
+.toc-box a:hover::after {
+  width: 100%;
+}
+
+/* Speech Balloon (吹き出し) */
+.speech-balloon {
+  position: relative;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  margin-left: 1rem;
+}
+.speech-balloon::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 20px;
+  border-width: 8px 8px 8px 0;
+  border-style: solid;
+  border-color: transparent rgba(30, 41, 59, 0.6) transparent transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+.speech-balloon::after {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 20px;
+  border-width: 8px 8px 8px 0;
+  border-style: solid;
+  border-color: transparent rgba(255, 255, 255, 0.08) transparent transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+
+/* Highlight styles */
+.highlight-underline {
+  background: linear-gradient(transparent 70%, rgba(45, 212, 168, 0.25) 70%);
+}
+.highlight-bg {
+  background-color: rgba(212, 168, 67, 0.15);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+

@@ -66,7 +66,7 @@
         <!-- Desktop Nav -->
         <div class="hidden md:flex items-center gap-8">
           <a
-            href="#about"
+            href="#why-created"
             class="text-sm font-medium text-gray-300 hover:text-buddhao-teal transition-colors"
             >BUDDHAOとは</a
           >
@@ -74,6 +74,11 @@
             href="#features"
             class="text-sm font-medium text-gray-300 hover:text-buddhao-teal transition-colors"
             >できること</a
+          >
+          <a
+            href="#benefits"
+            class="text-sm font-medium text-gray-300 hover:text-buddhao-teal transition-colors"
+            >購入者特典</a
           >
           <a
             href="#join"
@@ -110,7 +115,7 @@
         class="mobile-menu fixed top-0 right-0 w-full h-screen bg-buddhao-darker/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
       >
         <a
-          href="#about"
+          href="#why-created"
           class="text-xl font-medium text-gray-200 hover:text-buddhao-teal transition-colors mobile-link"
           >BUDDHAOとは</a
         >
@@ -118,6 +123,11 @@
           href="#features"
           class="text-xl font-medium text-gray-200 hover:text-buddhao-teal transition-colors mobile-link"
           >できること</a
+        >
+        <a
+          href="#benefits"
+          class="text-xl font-medium text-gray-200 hover:text-buddhao-teal transition-colors mobile-link"
+          >購入者特典</a
         >
         <a
           href="#join"
@@ -171,9 +181,78 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- About Section -->
+    <!-- Announcement & Table of Contents -->
     <!-- ============================================ -->
-    <section id="about" class="relative py-24 md:py-32 lotus-bg">
+    <section class="relative py-12">
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <!-- Intro Box -->
+        <div class="intro-box p-6 md:p-8 mb-8 border border-buddhao-teal bg-buddhao-teal/5 text-gray-200 reveal">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-buddhao-teal text-buddhao-dark font-bold text-xs px-2.5 py-1 rounded">2026/6/18 更新情報</span>
+          </div>
+          <p class="font-noto font-bold text-lg md:text-xl text-white mb-2">BUDDHAOコミュニティは、どなたでも参加できるようになりました！</p>
+          <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+            「お坊さんのためのAI活用の教科書」の購入者さまには限定チャンネルを新設し、より充実したコミュニケーションが取れるようにしています。
+          </p>
+        </div>
+
+        <!-- Table of Contents -->
+        <div id="toc" class="toc-box p-6 md:p-8 reveal" style="transition-delay: 0.2s">
+          <h3 class="text-white font-noto font-bold text-lg mb-4 flex items-center gap-2">
+            <span>📋</span> 目次
+          </h3>
+          <ul class="flex flex-col gap-4 text-sm font-zen">
+            <li>
+              <a href="#why-created" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                <span>📌</span> なぜコミュニティを作ったのか？
+              </a>
+            </li>
+            <li>
+              <div class="text-gray-300 flex items-start gap-1.5 flex-col">
+                <a href="#why-cross-sect" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                  <span>📌</span> なぜいま、宗派を超えた繋がりが必要なのか？
+                </a>
+                <ul class="pl-6 mt-1 space-y-1.5 text-xs text-gray-400">
+                  <li><a href="#reason1" class="hover:text-buddhao-teal transition-colors">1. 同じ宗派の中では、悩みを打ち明けにくい</a></li>
+                  <li><a href="#reason2" class="hover:text-buddhao-teal transition-colors">2. 宗派が違うからこそ、新鮮な気づきがある</a></li>
+                  <li><a href="#reason3" class="hover:text-buddhao-teal transition-colors">3. 寺院が抱える課題は、宗派を問わない</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#features" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                <span>📌</span> BUDDHAOでできること
+              </a>
+            </li>
+            <li>
+              <a href="#benefits" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                <span>📌</span> 「お坊さんのためのAI活用の教科書」の特典について
+              </a>
+            </li>
+            <li>
+              <a href="#join" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                <span>📌</span> 参加条件と費用
+              </a>
+            </li>
+            <li>
+              <a href="#how-to-join" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                <span>📌</span> BUDDHAOの参加方法
+              </a>
+            </li>
+            <li>
+              <a href="#discord-usage" class="hover:text-buddhao-teal transition-colors text-gray-300 flex items-center gap-1.5">
+                <span>📌</span> Discordのかんたんな使い方を解説
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Why Created Section (なぜコミュニティを作ったのか？) -->
+    <!-- ============================================ -->
+    <section id="why-created" class="relative py-24 md:py-32 lotus-bg">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <!-- Image -->
@@ -185,36 +264,131 @@
                 class="w-full h-80 md:h-[500px] object-cover rounded-2xl"
               />
             </div>
+            <!-- Sub Info Card -->
+            <div class="mt-6 p-5 rounded-xl bg-gradient-to-r from-buddhao-teal/5 to-buddhao-gold/5 border border-buddhao-teal/10">
+              <div class="flex items-center gap-3">
+                <span class="text-3xl text-buddhao-gold">📉</span>
+                <div>
+                  <h4 class="text-white font-bold text-sm">寺院を取り巻く厳しい現実</h4>
+                  <p class="text-gray-400 text-xs mt-1">
+                    2040年までに<span class="text-buddhao-gold font-bold highlight-underline">約35%の寺院が消滅</span>するという推計もあります。
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Text -->
           <div class="reveal-right">
-            <p
-              class="text-buddhao-teal font-medium tracking-widest text-sm mb-3 uppercase"
-            >
-              About BUDDHAO
+            <p class="text-buddhao-teal font-medium tracking-widest text-sm mb-3 uppercase">
+              Origin
             </p>
-            <h2
-              class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
-            >
-              BUDDHAO<span class="text-buddhao-gold">（ブッダオ）</span>とは？
+            <h2 class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+              なぜコミュニティを<br class="hidden md:block" />作ったのか？
             </h2>
             <div class="section-divider !ml-0"></div>
-            <p class="text-gray-300 text-lg leading-relaxed mb-6">
-              宗派を超えて、お坊さん同士が繋がり、学び合えるDiscordのコミュニティです。
+            
+            <p class="text-gray-200 text-lg font-bold mb-4 font-noto">
+              僧侶って、意外と孤独です。
             </p>
-            <p class="text-gray-400 leading-relaxed mb-8">
-              寺院の運営・管理方法、法話の作り方などを共有し、厳しい時代を共に乗り越えて参りましょう！
+            
+            <!-- Grid list with Emojis -->
+            <ul class="space-y-3 mb-6 font-zen text-sm md:text-base text-gray-300">
+              <li class="flex items-start gap-2">
+                <span>💬</span> <span>法話の悩みを相談できる相手が身近にいない。</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span>🤖</span> <span>僧侶目線で、AIの使い方を聞ける人がいない。</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span>🤝</span> <span>他の宗派の僧侶と話す機会がほとんどない。</span>
+              </li>
+            </ul>
+
+            <!-- Speech Balloon -->
+            <div class="flex items-start gap-3 mb-6">
+              <div class="flex-shrink-0">
+                <div class="profile-ring w-12 h-12">
+                  <img src="IMG_7251.JPG" alt="ヨシボウ" class="w-full h-full object-cover rounded-full" />
+                </div>
+              </div>
+              <div class="speech-balloon text-sm text-gray-300 leading-relaxed font-zen">
+                ぼく自身、ずっとそう感じていました。<br /><br />
+                AIを使い始めたときも、一人で試行錯誤の日々。「これでいいのかな」と不安になることが何度もありました。だからこそ、同じ志を持つ僧侶が気軽に集まれる場所が必要だと思ったんです。
+              </div>
+            </div>
+
+            <p class="text-gray-400 font-zen text-sm md:text-base leading-relaxed mb-6">
+              仲間がいると心強い。ともに厳しい時代を乗り越えていきたい。
             </p>
-            <div
-              class="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-buddhao-teal/5 to-buddhao-gold/5 border border-buddhao-teal/10"
-            >
-              <div class="text-3xl">☸</div>
-              <p class="text-gray-300 text-sm leading-relaxed">
-                宗派の垣根を越えた、<br class="hidden sm:block" />
-                <span class="text-buddhao-teal font-semibold"
-                  >新しい形の仏教コミュニティ</span
-                >です
-              </p>
+            <p class="text-gray-300 font-bold font-noto text-base">
+              そんな想いで、BUDDHAOを作りました。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Why Cross-Sectarian Connection is Needed Section (なぜいま、宗派を超えた繋がりが必要なのか？) -->
+    <!-- ============================================ -->
+    <section id="why-cross-sect" class="relative py-24 md:py-32 bg-buddhao-darker">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 reveal">
+          <p class="text-buddhao-teal font-medium tracking-widest text-sm mb-3 uppercase">
+            Significance
+          </p>
+          <h2 class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
+            なぜいま、<span class="text-buddhao-gold">宗派を超えた繋がり</span>が必要なのか？
+          </h2>
+          <div class="section-divider"></div>
+          <p class="text-gray-400 font-zen text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+            ぼくが宗派を超えたコミュニティにこだわる理由は、大きく3つあります。それぞれ、詳しくお伝えしますね。
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Reason 1 -->
+          <div id="reason1" class="glass-card p-8 reveal" style="transition-delay: 0.1s">
+            <div class="icon-ring text-buddhao-teal">1</div>
+            <h3 class="font-noto text-lg font-bold mb-4 text-white text-center">
+              同じ宗派の中では、悩みを打ち明けにくい
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-zen">
+              同じ宗派の中には、先輩後輩の関係や「こんなことも知らないのか」と思われる不安があり、気軽に「法話の悩み」を口にしにくい空気があります。
+            </p>
+            <div class="p-4 rounded-lg bg-buddhao-dark/60 border border-white/5 text-xs text-gray-300 leading-relaxed font-zen">
+              <span class="text-buddhao-teal font-bold">💡 気づき：</span><br />
+              利害関係がない他宗派の僧侶だからこそ、変な遠慮がいらず、肩書きや立場を気にせず本音で話せます。それだけで気持ちがラクになります。
+            </div>
+          </div>
+
+          <!-- Reason 2 -->
+          <div id="reason2" class="glass-card p-8 reveal" style="transition-delay: 0.3s">
+            <div class="icon-ring text-buddhao-teal">2</div>
+            <h3 class="font-noto text-lg font-bold mb-4 text-white text-center">
+              宗派が違うからこそ、新鮮な気づきがある
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-zen">
+              教義や作法、文化が異なるからこそ、「うちの宗派ではこうしていますよ」という話が非常に新鮮な気づきになります。
+            </p>
+            <div class="p-4 rounded-lg bg-buddhao-dark/60 border border-white/5 text-xs text-gray-300 leading-relaxed font-zen">
+              <span class="text-buddhao-teal font-bold">💡 気づき：</span><br />
+              法話のアプローチも寺院運営の工夫も驚くほど視点が変わります。一つの宗派に閉じず、外の発想を取り入れることで自分の寺院を変えるきっかけが生まれます。
+            </div>
+          </div>
+
+          <!-- Reason 3 -->
+          <div id="reason3" class="glass-card p-8 reveal" style="transition-delay: 0.5s">
+            <div class="icon-ring text-buddhao-teal">3</div>
+            <h3 class="font-noto text-lg font-bold mb-4 text-white text-center">
+              寺院が抱える課題は、宗派を問わない
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-zen">
+              檀家の減少、後継者不足、地域とのつながりの希薄化など、どの宗派も構造的に同じ問題を抱えています。AIの活用も例外ではありません。
+            </p>
+            <div class="p-4 rounded-lg bg-buddhao-dark/60 border border-white/5 text-xs text-gray-300 leading-relaxed font-zen">
+              <span class="text-buddhao-teal font-bold">💡 気づき：</span><br />
+              「AIをどう法話や運営に活かすか」は全僧侶共通のテーマ。宗派を超えて同じ時代を生きる仲間同士が横でつながり、知恵を出し合い学び合う場が必要です。
             </div>
           </div>
         </div>
@@ -248,45 +422,116 @@
           <div class="section-divider"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-3 gap-8 text-center font-zen">
           <!-- Feature 1 -->
           <div
-            class="glass-card p-8 text-center reveal"
+            class="glass-card p-8 reveal"
             style="transition-delay: 0.1s"
           >
-            <div class="icon-ring">🙏</div>
+            <div class="icon-ring text-buddhao-teal">🙏</div>
             <h3 class="font-noto text-xl font-bold mb-4 text-white">
-              僧侶同士のネットワーク
+              一般（雑談）
             </h3>
-            <p class="text-gray-400 leading-relaxed">
-              オンラインでさまざまな宗派の僧侶と繋がることができます。宗派の壁を超えた交流が生まれます。
+            <p class="text-gray-400 leading-relaxed text-sm">
+              堅い話だけじゃなく、気楽な会話も大歓迎。宗派が違う僧侶同士の交流って、意外と新鮮で面白いですよ。
             </p>
           </div>
           <!-- Feature 2 -->
           <div
-            class="glass-card p-8 text-center reveal"
+            class="glass-card p-8 reveal"
             style="transition-delay: 0.3s"
           >
-            <div class="icon-ring">🤖</div>
+            <div class="icon-ring text-buddhao-teal">🤖</div>
             <h3 class="font-noto text-xl font-bold mb-4 text-white">
-              AI活用の学習
+              なんでも質問
             </h3>
-            <p class="text-gray-400 leading-relaxed">
-              「お坊さんのためのAI活用の教科書」に関する質問ができます。最新技術を寺院運営に活かしましょう。
+            <p class="text-gray-400 leading-relaxed text-sm">
+              ぼくへの質問はもちろん、どんな質問でもOKです。宗派を超えてさまざまな疑問をぶつけあいましょう。
             </p>
           </div>
           <!-- Feature 3 -->
           <div
-            class="glass-card p-8 text-center reveal"
+            class="glass-card p-8 reveal"
             style="transition-delay: 0.5s"
           >
-            <div class="icon-ring">📿</div>
+            <div class="icon-ring text-buddhao-teal">📿</div>
             <h3 class="font-noto text-xl font-bold mb-4 text-white">
-              法話の共有と学び
+              みんなの法話・ポッドキャスト
             </h3>
-            <p class="text-gray-400 leading-relaxed">
-              法話を共有できるチャンネルを通じて、互いに学び合えます。多様な法話に触れることで視野が広がります。
+            <p class="text-gray-400 leading-relaxed text-sm">
+              あなたの法話やポッドキャストをシェアできるチャンネル。YouTubeやSpotifyなどのURLも投稿できます。遠慮なくアップロードしてくださいね。
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Magazine Buyer Benefits Section (マガジン購入者特典について) -->
+    <!-- ============================================ -->
+    <section id="benefits" class="relative py-24 md:py-32 bg-gradient-to-b from-buddhao-darker to-buddhao-dark border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 reveal">
+          <p class="text-buddhao-gold font-medium tracking-widest text-sm mb-3 uppercase">
+            Special Benefits
+          </p>
+          <h2 class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
+            「お坊さんのためのAI活用の教科書」<br class="block md:hidden" /><span class="text-buddhao-teal">購入者特典</span>
+          </h2>
+          <div class="section-divider"></div>
+          <p class="text-gray-400 font-zen text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+            マガジン購入者さまには、さらに深い情報交換と特別なサポートが受けられる限定のチャンネルをご用意しています。
+          </p>
+          <!-- Alert Box (VIP Role Info) -->
+          <div class="max-w-2xl mx-auto mt-6 p-4 rounded-xl bg-buddhao-gold/10 border border-buddhao-gold/20 text-left text-sm text-gray-300 font-zen flex gap-3">
+            <span class="text-xl">⚠️</span>
+            <p>
+              これらの限定チャンネルは初期設定では表示されません。Discordの仕様上、<span class="text-buddhao-gold font-bold highlight-underline">「VIP」というロール（権限）</span>をお持ちの方のみに表示される仕組みになっています。
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Benefit 1 -->
+          <div class="glass-card p-8 reveal" style="transition-delay: 0.1s">
+            <div class="icon-ring text-buddhao-gold">🛠️</div>
+            <h3 class="font-noto text-lg font-bold mb-4 text-white text-center">
+              便利ツール置き場
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-zen">
+              創設者ヨシボウが作成したオリジナルのWebアプリや、特定のタスクを効率化するGPTs、AI活用ツールなどを共有しています。
+            </p>
+            <div class="p-3 rounded-lg bg-buddhao-dark/40 border border-buddhao-teal/10 text-xs text-gray-300 font-zen">
+              📌 <span class="text-buddhao-teal">現在公開中：</span>Webサイト作成のためのアニメーションサンプルサイト。今後も随時追加予定！
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="glass-card p-8 reveal" style="transition-delay: 0.3s">
+            <div class="icon-ring text-buddhao-gold">💬</div>
+            <h3 class="font-noto text-lg font-bold mb-4 text-white text-center">
+              マガジンに関する質問
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-zen">
+              「AI活用の教科書」に掲載されている内容はもちろん、実際に読みながら疑問に思ったこと、試してわからなかったことを直接何でも質問できます。
+            </p>
+            <div class="p-3 rounded-lg bg-buddhao-dark/40 border border-buddhao-teal/10 text-xs text-gray-300 font-zen">
+              📌 ぼく（ヨシボウ）が直接回答・サポートするので、最後まで安心して学習・実践に取り組んでいただけます！
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="glass-card p-8 reveal" style="transition-delay: 0.5s">
+            <div class="icon-ring text-buddhao-gold">👑</div>
+            <h3 class="font-noto text-lg font-bold mb-4 text-white text-center">
+              独自チャンネル作成権
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-zen">
+              「自分でコミュニティを運営してみたいけど、一から作るのは難しいかも…」という方のために、コミュニティ内にご自身の独自チャンネルをお作りします。
+            </p>
+            <div class="p-3 rounded-lg bg-buddhao-dark/40 border border-buddhao-teal/10 text-xs text-gray-300 font-zen">
+              📌 <span class="text-buddhao-gold">先着5〜10名様限定：</span>寺院運営や法話、仏教に関係するテーマなら何でもOK！お気軽に申し出てくださいね🎵
+            </div>
           </div>
         </div>
       </div>
@@ -300,88 +545,57 @@
         <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <!-- Text -->
           <div class="reveal-left order-2 md:order-1">
-            <p
-              class="text-buddhao-gold font-medium tracking-widest text-sm mb-3 uppercase"
-            >
-              How to Join
+            <p class="text-buddhao-gold font-medium tracking-widest text-sm mb-3 uppercase">
+              Terms & Fees
             </p>
-            <h2
-              class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
-            >
-              BUDDHAOに<br /><span class="text-buddhao-teal"
-                >参加するには？</span
-              >
+            <h2 class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+              参加条件と費用
             </h2>
             <div class="section-divider !ml-0"></div>
 
-            <div class="space-y-6 mb-10">
+            <div class="space-y-6 mb-10 font-zen">
               <div class="flex items-start gap-4">
-                <div
-                  class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-buddhao-teal to-buddhao-teal-dark flex items-center justify-center text-buddhao-dark font-bold text-sm"
-                >
-                  1
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-buddhao-teal to-buddhao-teal-dark flex items-center justify-center text-buddhao-dark font-bold text-sm">
+                  ✓
                 </div>
                 <div>
-                  <h4 class="text-white font-semibold mb-1">
-                    noteのマガジンを購入
-                  </h4>
+                  <h4 class="text-white font-semibold mb-1">参加条件：なし</h4>
                   <p class="text-gray-400 text-sm">
-                    「お坊さんのためのAI活用の教科書」を購入してください。
+                    お寺や仏教、AI活用にご興味のある僧侶の方であれば、どなたでもご参加いただけます。
                   </p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div
-                  class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-buddhao-teal to-buddhao-teal-dark flex items-center justify-center text-buddhao-dark font-bold text-sm"
-                >
-                  2
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-buddhao-teal to-buddhao-teal-dark flex items-center justify-center text-buddhao-dark font-bold text-sm">
+                  ✓
                 </div>
                 <div>
-                  <h4 class="text-white font-semibold mb-1">Discordに参加</h4>
+                  <h4 class="text-white font-semibold mb-1">費用：永久無料</h4>
                   <p class="text-gray-400 text-sm">
-                    マガジン内の案内に従ってBUDDHAOコミュニティへ参加できます。
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div
-                  class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-buddhao-teal to-buddhao-teal-dark flex items-center justify-center text-buddhao-dark font-bold text-sm"
-                >
-                  3
-                </div>
-                <div>
-                  <h4 class="text-white font-semibold mb-1">交流スタート！</h4>
-                  <p class="text-gray-400 text-sm">
-                    全国の僧侶とつながり、学び合いましょう。
+                    一度参加すれば、ずっと無料で利用できます。追加されるコンテンツも別途費用をいただく予定はありません。
                   </p>
                 </div>
               </div>
             </div>
 
-            <a
-              href="https://note.com/yoshibows/m/mcf7b620dca65"
-              target="_blank"
-              rel="noopener"
-              class="cta-btn"
-            >
-              <span>「お坊さんのためのAI活用の教科書」を見る</span>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 relative z-10"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-            </a>
+            <!-- VIP Role Info Box -->
+            <div class="p-5 rounded-xl bg-buddhao-slate border border-white/5 font-zen text-sm text-gray-300 leading-relaxed mb-8">
+              <span class="text-buddhao-teal font-bold text-base">🎁 マガジン購入者特典ロールの受け取り方</span><br class="mb-2" />
+              「お坊さんのためのAI活用の教科書」を購入してくださった方は、Discord参加後にサーバー内でぼくにメッセージを送ってください。<br />
+              <span class="text-buddhao-gold font-bold">「VIP」ロール</span>をプレゼントしますので、Discord内の全ての限定チャンネルが利用できるようになります！
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <!-- Note Button -->
+              <a
+                href="https://note.com/yoshibows/m/mcf7b620dca65"
+                target="_blank"
+                rel="noopener"
+                class="cta-btn text-center justify-center"
+              >
+                <span>マガジン「AI活用の教科書」を見る</span>
+              </a>
+            </div>
           </div>
           <!-- Image -->
           <div class="reveal-right order-1 md:order-2">
@@ -391,6 +605,109 @@
                 alt="AI活用の教科書"
                 class="w-full h-80 md:h-[500px] object-cover rounded-2xl"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- How to Join Section (BUDDHAOの参加方法) -->
+    <!-- ============================================ -->
+    <section id="how-to-join" class="relative py-24 md:py-32 bg-buddhao-darker">
+      <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+        <p class="text-buddhao-teal font-medium tracking-widest text-sm mb-3 uppercase">
+          Registration
+        </p>
+        <h2 class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
+          BUDDHAOの参加方法
+        </h2>
+        <div class="section-divider"></div>
+        <p class="text-gray-400 font-zen text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-10">
+          BUDDHAOコミュニティは、無料のチャットアプリ「Discord」を使用して運営しています。以下のボタンからどなたでもすぐに参加できます。
+        </p>
+
+        <!-- Discord Join CTA -->
+        <div class="p-8 md:p-12 rounded-2xl border border-buddhao-teal/20 bg-gradient-to-r from-buddhao-teal/5 to-buddhao-gold/5 max-w-2xl mx-auto reveal">
+          <div class="text-5xl mb-4">💬</div>
+          <h3 class="font-noto font-bold text-xl text-white mb-3">Discordコミュニティに参加する</h3>
+          <p class="text-gray-400 text-sm font-zen mb-8">
+            ボタンをクリックすると、Discordアプリまたはブラウザが開き、BUDDHAOの招待画面が表示されます。
+          </p>
+          <a
+            href="#"
+            class="cta-btn text-lg"
+          >
+            <span>BUDDHAOに参加する（無料）</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </a>
+          <p class="text-gray-500 text-xs mt-3 font-zen">※Discordのアカウントをお持ちでない方は、参加時に無料登録を行えます。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Discord Usage Guide Section (Discordのかんたんな使い方を解説) -->
+    <!-- ============================================ -->
+    <section id="discord-usage" class="relative py-24 md:py-32">
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 reveal">
+          <p class="text-buddhao-teal font-medium tracking-widest text-sm mb-3 uppercase">
+            Guide
+          </p>
+          <h2 class="font-noto text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
+            Discordのかんたんな使い方
+          </h2>
+          <div class="section-divider"></div>
+          <p class="text-gray-400 font-zen text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+            初めてDiscordを利用されるお坊さん向けに、基本的な使い方や用語を簡単に解説します。
+          </p>
+        </div>
+
+        <div class="glass-card p-6 md:p-10 reveal">
+          <div class="space-y-6 font-zen">
+            <div class="flex items-start gap-4 pb-6 border-b border-white/5">
+              <div class="text-2xl text-buddhao-teal">📱</div>
+              <div>
+                <h4 class="text-white font-bold mb-1">アプリをダウンロード（推奨）</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  スマートフォン（iPhone/Android）やパソコン（Windows/Mac）向けの無料アプリを使うと、通知を受け取りやすく非常に便利です。もちろん、ブラウザのままでも利用できます。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 pb-6 border-b border-white/5">
+              <div class="text-2xl text-buddhao-teal">🏷️</div>
+              <div>
+                <h4 class="text-white font-bold mb-1">「チャンネル」と「カテゴリ」</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  画面左側に並んでいるリストが「チャンネル」です。テーマごとに部屋が分かれています。例えば「一般（雑談）」チャンネルは皆で気楽に雑談する部屋、「なんでも質問」は質問をする部屋です。これらがまとまったグループを「カテゴリ」と呼びます。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 pb-6 border-b border-white/5">
+              <div class="text-2xl text-buddhao-teal">💬</div>
+              <div>
+                <h4 class="text-white font-bold mb-1">メッセージの投稿</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  画面下部にある入力欄に文章を打ち込み、送信ボタン（またはエンターキー）を押すことで投稿できます。他の人の発言に対して「リアクション（スタンプ）」を押すだけでも簡単に交流できます。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="text-2xl text-buddhao-gold">👑</div>
+              <div>
+                <h4 class="text-white font-bold mb-1">「ロール（権限）」とは？</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  メンバーに与えられる「役職」のようなものです。マガジン購入者さまには「VIP」というロールを付与します。このロールを持つと、購入者限定の隠しチャンネルが自動的に表示されるようになります。
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -427,7 +744,7 @@
               <div class="flex items-center gap-3">
                 <span class="text-buddhao-teal font-bold text-lg">Q1</span>
                 <span class="text-white font-semibold"
-                  >なぜ有料なのですか？</span
+                  >本当に無料ですか？</span
                 >
               </div>
               <svg
@@ -446,8 +763,8 @@
             </div>
             <div class="faq-answer">
               <p class="text-gray-400 pl-10">
-                本気で次世代の寺院のあり方を考えている方たちと繋がりたいからです。<br />
-                閉鎖的で密な空間を提供するため、有料とさせていただきました。
+                はい、BUDDHAOコミュニティはどなたでも完全無料で参加・ご利用いただけます。<br />
+                一度参加すれば、追加のコンテンツや今後の利用で別途費用が発生することはありません。
               </p>
             </div>
           </div>
@@ -457,7 +774,7 @@
             <div class="faq-question" onclick="toggleFAQ('faq-q2')">
               <div class="flex items-center gap-3">
                 <span class="text-buddhao-teal font-bold text-lg">Q2</span>
-                <span class="text-white font-semibold">月額制ですか？</span>
+                <span class="text-white font-semibold">月額費用は発生しますか？</span>
               </div>
               <svg
                 class="faq-chevron h-5 w-5 text-buddhao-teal"
@@ -475,11 +792,8 @@
             </div>
             <div class="faq-answer">
               <p class="text-gray-400 pl-10">
-                いいえ、月額は発生しません。<br />
-                マガジンの購入だけで、<span
-                  class="text-buddhao-teal font-semibold"
-                  >永久に完全無料</span
-                >で参加できます！
+                いいえ、月額費用などは一切発生しません。<br />
+                マガジン購入者さま限定のVIPチャンネルも、一度マガジンをご購入いただくだけで、追加の月額費用なしで永久に完全無料でご利用いただけます。
               </p>
             </div>
           </div>
@@ -589,7 +903,7 @@
               <div class="flex items-center gap-3">
                 <span class="text-buddhao-teal font-bold text-lg">Q6</span>
                 <span class="text-white font-semibold"
-                  >友人に紹介したいときは？</span
+                  >友人の僧侶に紹介したいときは？</span
                 >
               </div>
               <svg
@@ -608,8 +922,8 @@
             </div>
             <div class="faq-answer">
               <p class="text-gray-400 pl-10">
-                コミュニティへの参加は、マガジン購入者様の特典とさせていただいています。<br />
-                noteのマガジン「お坊さんのためのAI活用の教科書」を共有していただけると幸いです。
+                BUDDHAOコミュニティはどなたでも参加可能ですので、こちらのWebサイトのURLをそのまま共有してご招待ください。<br />
+                また、AI活用に興味がある方へは、noteのマガジン「お坊さんのためのAI活用の教科書」も合わせてご紹介いただけると嬉しいです。
               </p>
             </div>
           </div>
@@ -821,13 +1135,18 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center justify-end gap-6">
           <div class="flex flex-wrap gap-6 text-sm text-gray-500">
-            <a href="#about" class="hover:text-buddhao-teal transition-colors"
+            <a href="#why-created" class="hover:text-buddhao-teal transition-colors"
               >BUDDHAOとは</a
             >
             <a
               href="#features"
               class="hover:text-buddhao-teal transition-colors"
               >できること</a
+            >
+            <a
+              href="#benefits"
+              class="hover:text-buddhao-teal transition-colors"
+              >購入者特典</a
             >
             <a href="#join" class="hover:text-buddhao-teal transition-colors"
               >参加方法</a
